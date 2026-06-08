@@ -31,18 +31,15 @@ public class LoginPage {
             username_clear.sendKeys(Keys.DELETE);
             username_clear.sendKeys(username);
 
-            driver.findElement(input_password).sendKeys(username);
+            driver.findElement(input_password).sendKeys(password);
 
         }else {
 
             driver.findElement(input_username).sendKeys(username);
 
-            driver.findElement(input_password).sendKeys(username);
+            driver.findElement(input_password).sendKeys(password);
 
         }
-
-        driver.findElement(button_login).click();
-
 
     }
 }

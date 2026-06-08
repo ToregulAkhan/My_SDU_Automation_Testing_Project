@@ -2,6 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test name="My_SDU">
-        <classes/>
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="tests.LoginToMainPage_Test"/>
+        </classes>
+
     </test>
 </suite>
