@@ -2,15 +2,11 @@ package tests;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 import page.LoginPage;
 import page.MainPage;
 import utils.DriverManager;
-import utils.Retry;
-import utils.Test_Data;
 
-public class BaseTest {
+public class TestToMainPage {
 
     LoginPage loginPage;
     MainPage mainPage;
