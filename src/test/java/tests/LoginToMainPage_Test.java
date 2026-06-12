@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import page.LoginPage;
@@ -16,7 +18,7 @@ import utils.Test_Data;
 
 import java.time.Duration;
 
-public class LoginToMainPage_Test {
+public class LoginToMainPage_Test extends BaseTest{
     LoginPage loginPage;
     MainPage mainPage;
     WebDriverWait wait;
@@ -29,7 +31,6 @@ public class LoginToMainPage_Test {
 
     @BeforeClass(alwaysRun = true)
     public void loginPage(){
-        DriverManager.openBrowser();
         loginPage = new LoginPage(DriverManager.driver);
         mainPage = new MainPage(DriverManager.driver);
         loginPage.openSite();

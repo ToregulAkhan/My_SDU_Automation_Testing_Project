@@ -17,13 +17,10 @@ public class Consent_Requests_Page_Test extends TestToMainPage {
 
     @Test(
             groups = "smoke",
-            dataProvider = "login_pass",
-            dataProviderClass = Test_Data.class,
             retryAnalyzer = Retry.class,
             priority = 1
     )
-    public void setup(String username, String password){
-        super.login(username, password);
+    public void setup(){
         DriverManager.driver.findElement(Consent_Requests).click();
     }
 

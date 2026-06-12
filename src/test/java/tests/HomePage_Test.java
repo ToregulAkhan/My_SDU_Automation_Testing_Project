@@ -13,13 +13,10 @@ public class HomePage_Test extends TestToMainPage{
 
     @Test(
             groups = "smoke",
-            dataProvider = "login_pass",
             retryAnalyzer = Retry.class,
-            dataProviderClass = Test_Data.class,
             priority = 1
     )
-    public void print(String username, String password) {
-        super.login(username, password);
+    public void print() {
         System.out.println("print all info about the user");
 
         System.out.println(DriverManager.driver.findElements(clsTd).get(0).getText() + " " + DriverManager.driver.findElements(nowrap).get(0).getText());
