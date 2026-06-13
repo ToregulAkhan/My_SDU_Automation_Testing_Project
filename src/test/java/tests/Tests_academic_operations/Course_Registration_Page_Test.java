@@ -8,17 +8,18 @@ import utils.Retry;
 import utils.Test_Data;
 
 public class Course_Registration_Page_Test extends TestToMainPage {
+
     By Course_Registration  = By.xpath("//a[text()='Course Registration ']");
+    By inputTrack = By.id("inputTrack");
+    By selectTrack = By.id("selectTrack");
+    By Main_Track = By.xpath("//*[text()='M - Main Track']");
 
     @Test(
             groups = "smoke",
-            dataProvider = "login_pass",
-            dataProviderClass = Test_Data.class,
             retryAnalyzer = Retry.class,
             priority = 1
     )
-    public void setup(String username, String password){
-        super.login(username, password);
+    public void setup(){
         DriverManager.driver.findElement(Course_Registration).click();
     }
 
@@ -27,6 +28,9 @@ public class Course_Registration_Page_Test extends TestToMainPage {
             priority = 2
     )
     public void test_to_page(){
+        DriverManager.driver.findElement(inputTrack).click();
+        DriverManager.driver.findElement(selectTrack).click();
+        DriverManager.driver.findElement(Main_Track).click();
 
     }
 }
