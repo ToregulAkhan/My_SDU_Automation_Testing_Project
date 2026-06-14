@@ -35,7 +35,7 @@ public class Curricula_Page_Test extends BaseTest {
                 return; // success
             } catch (StaleElementReferenceException e) {
                 attempts++;
-                if (attempts == 10) throw e;
+                if (attempts == 8) throw e;
             }
         }
     }

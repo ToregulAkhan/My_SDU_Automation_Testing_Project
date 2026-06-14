@@ -21,6 +21,8 @@
 
             <class name="tests.Tests_information.Curricula_Page_Test"/>
             <class name="tests.Tests_information.My_Curriculum_Page_Test"/>
+            <class name="tests.Tests_information.Transcript_Page_Test"/>
+            <class name="tests.Tests_information.Grades_List_Page_Test"/>
 
         </classes>
 
