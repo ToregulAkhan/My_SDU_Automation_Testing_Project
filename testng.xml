@@ -10,11 +10,16 @@
         </groups>
 
         <classes>
+
             <class name="tests.LoginToMainPage_Test"/>
             <class name="tests.HomePage_Test"/>
+
             <class name="tests.Tests_academic_operations.Consent_Requests_Page_Test"/>
             <class name="tests.Tests_academic_operations.Course_Registration_Page_Test"/>
             <class name="tests.Tests_academic_operations.Wish_list_Page_Test"/>
+            <class name="tests.Tests_academic_operations.Withdrawals_Page_Test"/>
+
+            <class name="tests.Tests_information.Curricula_Page_Test"/>
 
         </classes>
 
