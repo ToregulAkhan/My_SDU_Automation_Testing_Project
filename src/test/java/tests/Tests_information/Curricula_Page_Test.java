@@ -22,7 +22,7 @@ public class Curricula_Page_Test extends TestToMainPage {
 
     private void selectYearWithRetry(By selectBy, By showBtn, String year) {
         int attempts = 0;
-        while (attempts < 10) {
+        while (attempts < 8) {
             try {
                 WebElement selectElement = wait.until(
                         ExpectedConditions.elementToBeClickable(selectBy)
