@@ -2,11 +2,11 @@ package tests.Tests_academic_operations;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import tests.TestToMainPage;
+import tests.BaseTest;
 import utils.DriverManager;
 import utils.Retry;
 
-public class Withdrawals_Page_Test extends TestToMainPage {
+public class Withdrawals_Page_Test extends BaseTest {
 
     By withdrawals = By.xpath("//a[text()='Withdrawals '] ");
     By yearTerm = By.id("yearTerm");

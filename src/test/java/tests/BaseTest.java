@@ -1,18 +1,18 @@
 package tests;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import utils.DriverManager;
 
 public class BaseTest {
 
-    @BeforeClass(alwaysRun = true)
-    public void open(){
+    @BeforeSuite(alwaysRun = true)
+    public void openBrowser() {
         DriverManager.openBrowser();
     }
 
-    @AfterClass(alwaysRun = true)
-    public void close(){
+    @AfterSuite(alwaysRun = true)
+    public void closeBrowser() {
         DriverManager.closeBrowser();
     }
 }

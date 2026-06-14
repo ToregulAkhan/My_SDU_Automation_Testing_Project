@@ -6,7 +6,7 @@ import utils.DriverManager;
 import utils.Retry;
 import utils.Test_Data;
 
-public class HomePage_Test extends TestToMainPage{
+public class HomePage_Test extends BaseTest{
 
     By nowrap = By.xpath("//td[@nowrap='nowrap']");
     By clsTd = By.className("clsTd");

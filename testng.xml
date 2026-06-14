@@ -20,6 +20,7 @@
             <class name="tests.Tests_academic_operations.Withdrawals_Page_Test"/>
 
             <class name="tests.Tests_information.Curricula_Page_Test"/>
+            <class name="tests.Tests_information.My_Curriculum_Page_Test"/>
 
         </classes>
 

@@ -2,12 +2,11 @@ package tests.Tests_academic_operations;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import tests.TestToMainPage;
+import tests.BaseTest;
 import utils.DriverManager;
 import utils.Retry;
-import utils.Test_Data;
 
-public class Course_Registration_Page_Test extends TestToMainPage {
+public class Course_Registration_Page_Test extends BaseTest {
 
     By Course_Registration  = By.xpath("//a[text()='Course Registration ']");
     By inputTrack = By.id("inputTrack");

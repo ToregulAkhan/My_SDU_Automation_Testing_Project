@@ -2,11 +2,10 @@ package tests.Tests_academic_operations;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 import tests.TestToMainPage;
 import utils.DriverManager;
 import utils.Retry;
@@ -14,7 +13,7 @@ import utils.Retry;
 import java.time.Duration;
 import java.util.List;
 
-public class Wish_list_Page_Test extends TestToMainPage {
+public class Wish_list_Page_Test extends BaseTest {
 
     By Wish_list  = By.xpath("//a[text()='Wish list ']");
     By option = By.xpath("//option[@value = '[object Object]']");
@@ -49,8 +48,8 @@ public class Wish_list_Page_Test extends TestToMainPage {
             wait.until(ExpectedConditions.numberOfElementsToBe(remove, existing.size() - 1 - i));
         }
 
-        DriverManager.driver.findElement(CSS_105).click();
-        DriverManager.driver.findElement(MDE_131).click();
+        wait.until(ExpectedConditions.elementToBeClickable(CSS_105)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(MDE_131)).click();
 
         // он ждет, пока станет больше 1
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(remove, 1));
@@ -101,8 +100,8 @@ public class Wish_list_Page_Test extends TestToMainPage {
             wait.until(ExpectedConditions.numberOfElementsToBe(remove, existing.size() - 1 - i));
         }
 
-        DriverManager.driver.findElement(CSS_105).click();
-        DriverManager.driver.findElement(MDE_131).click();
+        wait.until(ExpectedConditions.elementToBeClickable(CSS_105)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(MDE_131)).click();
 
         // он ждет, пока станет больше 1
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(remove, 1));
@@ -153,8 +152,8 @@ public class Wish_list_Page_Test extends TestToMainPage {
             wait.until(ExpectedConditions.numberOfElementsToBe(remove, existing.size() - 1 - i));
         }
 
-        DriverManager.driver.findElement(CSS_105).click();
-        DriverManager.driver.findElement(MDE_131).click();
+        wait.until(ExpectedConditions.elementToBeClickable(CSS_105)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(MDE_131)).click();
 
         // он ждет, пока станет больше 1
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(remove, 1));

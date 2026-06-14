@@ -7,14 +7,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-import tests.TestToMainPage;
+import tests.BaseTest;
 import utils.DriverManager;
 import utils.Retry;
 
-import java.sql.Driver;
 import java.time.Duration;
 
-public class Curricula_Page_Test extends TestToMainPage {
+public class Curricula_Page_Test extends BaseTest {
 
     WebDriverWait wait;
 
@@ -109,7 +108,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 3
+            priority = 3,
+            dependsOnMethods = "c_10020_test"
     )
     public void CPDI_DLD() {
 
@@ -164,7 +164,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 4
+            priority = 4,
+            dependsOnMethods = "CPDI_DLD_test"
     )
     public void DEP_COMP_SCI() {
 
@@ -222,7 +223,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 5
+            priority = 5,
+            dependsOnMethods = "DEP_COMP_SCI_test"
     )
     public void DEP_ECO_BUS() {
 
@@ -280,7 +282,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 6
+            priority = 6,
+            dependsOnMethods = "DEP_ECO_BUS_test"
     )
     public void DEP_HUMANITIES() {
 
@@ -336,7 +339,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 7
+            priority = 7,
+            dependsOnMethods = "DEP_HUMANITIES_test"
     )
     public void DEP_INF_SYS() {
 
@@ -394,7 +398,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 8
+            priority = 8,
+            dependsOnMethods = "DEP_INF_SYS_test"
     )
     public void DEP_JURIS() {
 
@@ -451,7 +456,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 9
+            priority = 9,
+            dependsOnMethods = "DEP_JURIS_test"
     )
     public void DEP_LANG_EDU() {
 
@@ -509,7 +515,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 10
+            priority = 10,
+            dependsOnMethods = "DEP_LANG_EDU_test"
     )
     public void DEP_MATH() {
 
@@ -567,7 +574,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 11
+            priority = 11,
+            dependsOnMethods = "DEP_MATH_test"
     )
     public void DEP_PED() {
 
@@ -625,7 +633,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 12
+            priority = 12,
+            dependsOnMethods = "DEP_PED_test"
     )
     public void DEP_SOC_SCI() {
 
@@ -682,7 +691,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 13
+            priority = 13,
+            dependsOnMethods = "DEP_SOC_SCI_test"
     )
     public void FOUNDATION() {
 
@@ -737,7 +747,8 @@ public class Curricula_Page_Test extends TestToMainPage {
     @Test(
             groups = "smoke",
             retryAnalyzer = Retry.class,
-            priority = 14
+            priority = 14,
+            dependsOnMethods = "FOUNDATION_test"
     )
     public void MDE_CENTER() {
 

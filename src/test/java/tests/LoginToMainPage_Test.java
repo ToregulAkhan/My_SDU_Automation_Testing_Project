@@ -29,11 +29,24 @@ public class LoginToMainPage_Test extends BaseTest{
     By submit = By.xpath("//input[@type='submit']");
     By q_button = By.className("q-button");
 
-    @BeforeClass(alwaysRun = true)
-    public void loginPage(){
+    @Test(
+            groups = "smoke",
+            priority = 1
+    )
+    public void openSite() {
         loginPage = new LoginPage(DriverManager.driver);
         mainPage = new MainPage(DriverManager.driver);
         loginPage.openSite();
+    }
+
+    @Test(
+            groups = "smoke",
+            priority = 2
+    )
+    public void can_not_access(){
+        DriverManager.driver.findElements(loginLink).get(0).click();
+        DriverManager.driver.findElement(studId).sendKeys("230103366");
+        DriverManager.driver.findElement(submit).click();
     }
 
     @Test(
@@ -57,14 +70,6 @@ public class LoginToMainPage_Test extends BaseTest{
         Assert.assertTrue(mainPage.mainPageIsOpened());
     }
 
-    @Test(
-            groups = "smoke",
-            priority = 2
-    )
-    public void can_not_access(){
-        DriverManager.driver.findElements(loginLink).get(0).click();
-        DriverManager.driver.findElement(studId).sendKeys("230103366");
-        DriverManager.driver.findElement(submit).click();
-    }
+
 
 }

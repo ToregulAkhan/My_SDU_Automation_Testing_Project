@@ -2,13 +2,11 @@ package tests.Tests_academic_operations;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import page.academic_operations.Consent_Requests_Page;
-import tests.TestToMainPage;
+import tests.BaseTest;
 import utils.DriverManager;
 import utils.Retry;
-import utils.Test_Data;
 
-public class Consent_Requests_Page_Test extends TestToMainPage {
+public class Consent_Requests_Page_Test extends BaseTest {
 
     By Consent_Requests = By.xpath("//a[text()='Consent Requests ']");
     By GetRequests =  By.xpath("//select[@onchange='GetRequests()']");
