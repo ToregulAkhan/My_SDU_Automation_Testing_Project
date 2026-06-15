@@ -33,7 +33,7 @@ public class Course_Schedule_Page_Test extends BaseTest {
             groups = "smoke",
             priority = 2
     )
-    public void Individual_Schedule(){
+    public void Individual_Schedules(){
         wait = new WebDriverWait(DriverManager.driver, Duration.ofSeconds(10));
         DriverManager.driver.findElement(By.id("rgI")).click();
         By select = By.id("ysem");
@@ -49,7 +49,7 @@ public class Course_Schedule_Page_Test extends BaseTest {
 
     @Test(
             retryAnalyzer = Retry.class,
-            dependsOnMethods = "Individual_Schedule"
+            dependsOnMethods = "Individual_Schedules"
     )
     public void Individual_Schedule_Details(){
         wait = new WebDriverWait(DriverManager.driver, Duration.ofSeconds(10));
