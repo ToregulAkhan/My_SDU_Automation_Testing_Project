@@ -7,7 +7,7 @@ public class Test_Data {
     @DataProvider(name = "login_pass")
     public Object[][] data(){
         return new Object[][]{
-                {"230103366", "toregulakhanvvv4442005"}
+                {"230103366", ""}
         };
     }
 }

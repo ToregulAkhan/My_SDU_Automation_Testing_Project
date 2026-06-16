@@ -24,6 +24,10 @@
             <class name="tests.Tests_information.Transcript_Page_Test"/>
             <class name="tests.Tests_information.Grades_List_Page_Test"/>
             <class name="tests.Tests_information.Course_Schedule_Page_Test"/>
+            <class name="tests.Tests_information.Accounting_Info_Page_Test"/>
+            <class name="tests.Tests_information.Electronic_Attendance_Page_Test"/>
+            <class name="tests.Tests_information.System_Calendar_Page_Test"/>
+            <class name="tests.Tests_information.Gate_Entry_Records_Page_Test"/>
 
         </classes>
 
