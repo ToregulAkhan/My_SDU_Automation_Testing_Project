@@ -28,6 +28,12 @@
             <class name="tests.Tests_information.Electronic_Attendance_Page_Test"/>
             <class name="tests.Tests_information.System_Calendar_Page_Test"/>
             <class name="tests.Tests_information.Gate_Entry_Records_Page_Test"/>
+            <class name="tests.Tests_information.Rules_and_Regulations_Page_Test"/>
+
+            <class name="tests.Tests_services.Messages_Page_Test"/>
+            <class name="tests.Tests_services.Questionnaires_Page_Test"/>
+            <class name="tests.Tests_services.SduMail_Page_Test"/>
+            <class name="tests.Tests_services.Online_Services_Page_Test"/>
 
         </classes>
 
