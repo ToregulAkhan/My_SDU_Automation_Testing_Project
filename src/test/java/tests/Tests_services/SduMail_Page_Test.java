@@ -10,7 +10,7 @@ import utils.Retry;
 
 import java.time.Duration;
 
-public class SduMail_Page_Test extends BaseTest {
+public class SduMail_Page_Test extends TestToMainPage {
     WebDriverWait wait;
 
     @Test(
@@ -28,7 +28,6 @@ public class SduMail_Page_Test extends BaseTest {
         wait.until(driver -> driver.getWindowHandles().size() > 1);
 
         for (String handle : DriverManager.driver.getWindowHandles()) {
-            DriverManager.driver.switchTo().window(handle);
             if (!handle.equals(mainWindow)) {
                 DriverManager.driver.switchTo().window(handle);
                 break;
