@@ -10,7 +10,7 @@ import utils.Retry;
 
 import java.time.Duration;
 
-public class SduMail_Page_Test extends TestToMainPage {
+public class SduMail_Page_Test extends BaseTest {
     WebDriverWait wait;
 
     @Test(

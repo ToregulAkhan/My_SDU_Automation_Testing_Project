@@ -14,7 +14,7 @@ import utils.Retry;
 
 import java.time.Duration;
 
-public class Online_Services_Page_Test extends TestToMainPage {
+public class Online_Services_Page_Test extends BaseTest {
     WebDriverWait wait;
 
     @Test(

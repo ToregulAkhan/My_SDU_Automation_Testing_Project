@@ -35,6 +35,8 @@
             <class name="tests.Tests_services.SduMail_Page_Test"/>
             <class name="tests.Tests_services.Online_Services_Page_Test"/>
 
+            <class name="tests.Tests_profile.My_Profile_Page_Test"/>
+
         </classes>
 
     </test>
