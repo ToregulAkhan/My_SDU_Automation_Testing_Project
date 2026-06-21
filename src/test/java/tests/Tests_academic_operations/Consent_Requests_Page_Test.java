@@ -6,6 +6,7 @@ import tests.BaseTest;
 import utils.DriverManager;
 import utils.Retry;
 
+
 public class Consent_Requests_Page_Test extends BaseTest {
 
     By Consent_Requests = By.xpath("//a[text()='Consent Requests ']");
