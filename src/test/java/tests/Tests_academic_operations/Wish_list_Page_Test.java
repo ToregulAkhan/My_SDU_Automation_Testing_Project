@@ -118,7 +118,7 @@ public class Wish_list_Page_Test extends BaseTest {
         // он ждет пока будет ровно 1
         wait.until(ExpectedConditions.numberOfElementsToBe(remove, 1));
 
-        // --- Remove second item ---
+        // --- Remove second item --
         wait.until(ExpectedConditions.elementToBeClickable(remove)); // снова By локатор
         DriverManager.driver.findElements(remove).get(0).click();
 
