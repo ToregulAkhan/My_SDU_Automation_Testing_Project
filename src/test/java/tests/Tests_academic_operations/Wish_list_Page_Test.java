@@ -39,7 +39,7 @@ public class Wish_list_Page_Test extends BaseTest {
         WebElement summerOption = DriverManager.driver.findElements(option).get(0);
         summerOption.click();
 
-        //это код проверяет есть ли элементы в таблице если есть то  удаляет.
+        //это код проверяет есть ли элементы в таблице если есть то удаляет.
         List<WebElement> existing = DriverManager.driver.findElements(remove);
         for (int i = 0; i < existing.size(); i++) {
             DriverManager.driver.findElements(remove).get(0).click();
